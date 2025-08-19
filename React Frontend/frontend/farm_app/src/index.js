@@ -121,7 +121,7 @@ function App() {
     <>
         <div className="fixed-top" style={{zIndex: 10000}}>
           <Row style={{padding: '4px'}}>
-              <Col sx={12}>
+              <Col sx={13}>
                 <Row>
                   <Col>
                     <Row style={{padding: '0px 15px'}}>
@@ -135,13 +135,7 @@ function App() {
                   </Col>
                 </Row>
               </Col>
-              <Col xs={5} style={{padding: '0px 15px'}}>
-                {/* link to issue page */}
-                {/* <Button size="lg" variant="danger" style={{width: '50%'}}
-                href="https://github.com/KacperLa/SpudBuddy/issues"
-                >
-                  REPORT BUG
-                </Button> */}
+              <Col xs={4} style={{padding: '0px 15px'}}>
                 <Button size="lg" variant="danger" style={{width: '50%', position: 'end'}}
                 onClick={() => {
                   setRobotCmd("STAP");
@@ -181,7 +175,7 @@ function App() {
         />
 
         <OptionsView
-          position={{bottom: '50px', left: '50px'}}
+          position={{bottom: '20px', left: '50px'}}
           content={
               <table
                 style={{

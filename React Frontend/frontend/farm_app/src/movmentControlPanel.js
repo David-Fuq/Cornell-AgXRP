@@ -5,7 +5,7 @@ import './movementControlPanel.css';
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUp, faArrowDown, faArrowLeft, faArrowRight, faHome, faFaucetDrip, faArrowUpFromGroundWater, faAnchor} from '@fortawesome/free-solid-svg-icons'
+import { faArrowUp, faArrowDown, faArrowLeft, faArrowRight, faHome, faAnchor} from '@fortawesome/free-solid-svg-icons'
 
 const RelativeMovementControlPanel = (props) => {
   const [movementIncrament, setMovementIncrament] = useState(1);

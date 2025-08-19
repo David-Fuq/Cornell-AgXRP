@@ -1,12 +1,10 @@
-import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
+import {useEffect, useRef, useState } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
 
 import * as THREE from 'three';
-import { BufferAttribute } from "three";
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { CatmullRomLine, PerspectiveCamera } from '@react-three/drei'
-import { PointMaterial } from '@react-three/drei';
+import { CatmullRomLine } from '@react-three/drei'
 
 const Sphere = ({ sphereRef, position, isDraggingRef }) => {
 
@@ -88,7 +86,6 @@ const Plant = ({ key, position }) => {
 };
 
 const Plants = ({plantData}) => {
-  const plantRef = useRef();
   return (
     <>
       {plantData != null ? Object.keys(plantData).map((plant, index) => {
@@ -100,16 +97,7 @@ const Plants = ({plantData}) => {
   );
 };
 
-const SpudBuddyDummy = ({ position, color }) => {
-  return (
-    <mesh
-      position={position}
-    >
-      <sphereGeometry args={[.25, 32, .25]} />
-      <meshStandardMaterial color={color} />
-    </mesh>
-  );
-}
+
 
 
 const SpudBuddy = ({ position, color, setDesiredPos, isDraggable=false }) => {
@@ -187,9 +175,7 @@ function CameraController({ controlsRef }) {
 }
 
 function ThreeView(props) {
-  const meshRef = useRef();
   const [points, setPoints] = useState([]);
-  const robotRef = useRef();
   const controlsRef = useRef();
 
   return (

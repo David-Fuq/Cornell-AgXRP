@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { faSignal, faFile, faFlag, faDroplet, faWater, faUpRightAndDownLeftFromCenter, faFileImport, faChevronDown, faChevronUp, faArrowUpFromGroundWater, faArrowUpFromWaterPump, faGasPump } from '@fortawesome/free-solid-svg-icons';
+import { faSignal, faFile, faFlag, faDroplet, faWater, faUpRightAndDownLeftFromCenter, faFileImport, faChevronDown, faChevronUp, faArrowUpFromGroundWater, faGasPump } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
