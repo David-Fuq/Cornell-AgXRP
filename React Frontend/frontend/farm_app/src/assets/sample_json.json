@@ -1,0 +1,37 @@
+{
+    "gantry_size": [
+        656.3539,
+        260.8
+    ],
+    "plants": {
+        "raddish": {
+            "sense": [
+                462,
+                211
+            ],
+            "location": [
+                462,
+                211
+            ],
+            "moisture_threshhold": 0.2,
+            "ml_response": 30,
+            "id": 3
+        }
+    },
+    "missions": [
+        {
+            "time": [
+                9,
+                30
+            ],
+            "type": "water",
+            "locations": [
+                "tomato_1",
+                "spicy pepper 1",
+                "switch_1"
+            ],
+            "mission_name": "mission_2",
+            "mission_id": 2
+        }
+    ]
+}
